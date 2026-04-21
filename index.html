@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SISTEMA DE PRONÓSTICO OPERATIVO | JAVIER QUISPE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&family=JetBrains+Mono&family=Inter:wght@300;400;700&display=swap');
+
+        :root {
+            --neon-cyan: #00f2fe;
+            --neon-magenta: #ff00ff;
+            --dark-bg: #020202;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: #e2e8f0;
+            font-family: 'Inter', sans-serif;
+            background-image:
+                linear-gradient(rgba(0, 242, 254, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 242, 254, 0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+        }
+
+        .cyber-title {
+            font-family: 'Orbitron', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .mono {
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .neon-border {
+            border: 1px solid rgba(0, 242, 254, 0.2);
+            box-shadow: inset 0 0 10px rgba(0, 242, 254, 0.05);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .neon-border:hover {
+            border-color: var(--neon-cyan);
+            box-shadow: 0 0 20px rgba(0, 242, 254, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .glitch-text {
+            text-shadow: 2px 0 var(--neon-magenta), -2px 0 var(--neon-cyan);
+        }
+
+        .glass-panel {
+            background: rgba(10, 10, 10, 0.8);
+            backdrop-filter: blur(12px);
+        }
+
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--neon-cyan);
+        }
+    </style>
+</head>
+
+<body class="antialiased scroll-smooth">
+
+    <nav
+        class="fixed top-0 w-full z-50 bg-black/90 border-b border-cyan-500/20 py-3 px-8 flex justify-between items-center text-[9px] mono tracking-widest uppercase">
+        <div class="flex items-center gap-4">
+            <span class="text-cyan-400 animate-pulse">● ENLACE_CRÍTICO_ACTIVO</span>
+            <span class="text-gray-600 hidden md:inline">ID_SISTEMA: J.QUISPE_134763</span>
+        </div>
+        <div class="flex gap-6">
+            <a href="#experiencia" class="hover:text-cyan-400 transition">Trayectoria</a>
+            <a href="#academia" class="hover:text-cyan-400 transition">Ciencia</a>
+            <a href="#contacto" class="text-magenta-500 font-bold border border-magenta-500/30 px-2">DIAGNÓSTICO_</a>
+        </div>
+    </nav>
+
+    <header class="max-w-7xl mx-auto p-8 md:p-24 pt-32">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div class="space-y-8">
+                <div>
+                    <h1 class="text-6xl md:text-8xl cyber-title font-black glitch-text italic leading-none">QUISPE <span
+                            class="text-cyan-400 font-light italic">ALMERCO</span></h1>
+                    <p class="text-xl text-magenta-500 mono mt-6 uppercase tracking-widest">> Senior Predictive EHS
+                        Architect_</p>
+                </div>
+                <p class="text-2xl font-light leading-relaxed text-gray-400 italic border-l-4 border-magenta-500 pl-8">
+                    "No gestiono riesgos pasados; diseño la infraestructura predictiva para blindar la continuidad
+                    operativa de la gran minería mediante Machine Learning y persistencia técnica." [cite: 14, 20]
+                </p>
+                <div class="flex gap-6 text-[10px] mono text-cyan-400">
+                    <span class="border border-cyan-500/30 px-3 py-1 uppercase">970597269</span>
+                    <span
+                        class="border border-cyan-500/30 px-3 py-1 uppercase underline">javier.quispe@cip.org.pe</span>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="neon-border rounded-2xl overflow-hidden bg-black/50 p-4">
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="max-w-7xl mx-auto px-8 py-20">
+        <h2 class="text-xs mono text-cyan-500 uppercase tracking-[0.5em] mb-12 italic">// Matriz_de_Impacto_Directo_
+        </h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="glass-panel p-8 neon-border rounded-xl group">
+                <h3 class="text-white text-lg font-bold cyber-title mb-4 group-hover:text-cyan-400 transition">Cero
+                    Accidentabilidad</h3>
+                <p class="text-sm text-gray-400 leading-relaxed">
+                    Logré la meta de <span class="text-white font-bold italic">cero incidentes incapacitantes</span>
+                    [cite: 25], medido por una reducción del 100% en eventos críticos en celdas DR 300 [cite: 25, 111],
+                    mediante la ingeniería de permisos (PETAR) y modelado de riesgos[cite: 25, 126].
+                </p>
+            </div>
+            <div class="glass-panel p-8 neon-border rounded-xl group">
+                <h3 class="text-white text-lg font-bold cyber-title mb-4 group-hover:text-cyan-400 transition">
+                    Mitigación Ambiental</h3>
+                <p class="text-sm text-gray-400 leading-relaxed">
+                    Optimicé la integridad del entorno laboral [cite: 58], medido por una <span
+                        class="text-white font-bold italic">reducción del 85% en contaminación</span> de suelos por
+                    diésel [cite: 60], mediante el desarrollo de protocolos de control predictivo de hidrocarburos[cite:
+                    59].
+                </p>
+            </div>
+            <div class="glass-panel p-8 neon-border rounded-xl group">
+                <h3 class="text-white text-lg font-bold cyber-title mb-4 group-hover:text-cyan-400 transition">
+                    Eficiencia Digital</h3>
+                <p class="text-sm text-gray-400 leading-relaxed">
+                    Automaticé la inteligencia de seguridad [cite: 18], medido por la <span
+                        class="text-white font-bold italic">eliminación del reporte manual</span>, mediante el
+                    despliegue de Dashboards en Power BI y algoritmos de tendencia[cite: 18, 20, 114].
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiencia" class="max-w-7xl mx-auto px-8 py-20 border-t border-gray-900">
+        <h2 class="text-xs mono text-magenta-500 uppercase tracking-[0.5em] mb-20 italic">//
+            Nodos_de_Optimización_Operativa_</h2>
+        <div class="space-y-32">
+            <div class="grid md:grid-cols-4 gap-12 group">
+                <div class="md:col-span-1 space-y-4">
+                    <p class="text-white font-black cyber-title text-xl italic">2025 — PRESENTE</p>
+                    <p class="text-[10px] mono text-gray-500 uppercase tracking-widest leading-relaxed">NEXA RESOURCES |
+                        CAJAMARQUILLA<br>Empresa: POLYCOAS S.A. [cite: 23, 24]</p>
+                </div>
+                <div
+                    class="md:col-span-3 border-l border-cyan-500/20 pl-12 group-hover:border-cyan-500 transition-all duration-500">
+                    <h3 class="text-2xl font-bold text-white mb-6 uppercase tracking-tight">Coordinador de Pronóstico en
+                        Gestión de Riesgos Críticos [cite: 22]</h3>
+                    <ul class="space-y-6 text-gray-400 text-sm italic">
+                        <li><span class="text-cyan-500">●</span> <span class="text-white font-bold">Blindaje
+                                LOTO:</span> Reingeniería de protocolos de Bloqueo y Etiquetado en salas eléctricas para
+                            eliminar riesgos de exposición a ácido sulfúrico y vapores de zinc[cite: 26].</li>
+                        <li><span class="text-cyan-500">●</span> <span class="text-white font-bold">Modelado de Alta
+                                Energía:</span> Supervisión técnica predictiva en mantenimiento de celdas y hornos,
+                            garantizando cero incidentes mediante modelado proactivo de riesgos[cite: 25, 26].</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="academia" class="max-w-7xl mx-auto px-8 py-20 border-t border-gray-900">
+        <div class="mb-16">
+            <h2 class="text-xs mono text-cyan-500 uppercase tracking-[0.5em] mb-4 italic">// Sustento_Científico_</h2>
+
+        </div>
+        <div class="grid md:grid-cols-2 gap-10">
+            <div class="glass-panel p-10 neon-border rounded-2xl relative overflow-hidden group">
+                <p class="mono text-cyan-500 text-[9px] mb-2">POSGRADO // UNMSM [cite: 38]</p>
+                <h4 class="text-2xl font-bold cyber-title mb-2">Maestría en Gestión Integrada [cite: 39]</h4>
+                <p class="text-gray-400 text-sm italic">Mención en Seguridad, Salud Ocupacional y Medio Ambiente.
+                    Enfoque en la unificación sistémica de procesos industriales[cite: 39, 247].</p>
+            </div>
+            <div class="glass-panel p-10 neon-border rounded-2xl border-l-magenta-500">
+                <p class="mono text-magenta-500 text-[9px] mb-2">TITULACIÓN // UNMSM [cite: 35, 171]</p>
+                <h4 class="text-2xl font-bold cyber-title mb-2 italic tracking-tighter text-white">Ingeniero
+                    Metalurgista [cite: 175]</h4>
+                <p class="text-gray-400 text-sm italic">Colegiado y Habilitado | CIP: 134763[cite: 147, 153]. Experto en
+                    comportamiento de materiales y leyes físicas industriales[cite: 126, 178].</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="max-w-4xl mx-auto py-32 px-8">
+        <div class="glass-panel p-12 neon-border rounded-3xl bg-black/90">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-black cyber-title text-white italic mb-4 glitch-text">Iniciar_Diagnóstico_</h2>
+                <p class="text-gray-500 text-[10px] mono uppercase tracking-[0.4em]">Filtro de Inteligencia para Alta
+                    Gerencia Operativa</p>
+            </div>
+
+            <form id="supabase-form" class="space-y-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <div class="flex flex-col border-b border-gray-800 focus-within:border-cyan-500 transition">
+                        <label
+                            class="text-[9px] mono text-cyan-500 uppercase tracking-widest">Unidad_Corporativa_</label>
+                        <input type="text" id="empresa" required
+                            class="bg-transparent py-4 outline-none text-white text-sm" placeholder="ID de Empresa">
+                    </div>
+                    <div class="flex flex-col border-b border-gray-800 focus-within:border-cyan-500 transition">
+                        <label
+                            class="text-[9px] mono text-cyan-500 uppercase tracking-widest">Enlace_de_Respuesta_</label>
+                        <input type="email" id="email" required
+                            class="bg-transparent py-4 outline-none text-white text-sm" placeholder="enlace@corp.com">
+                    </div>
+                    <div class="flex flex-col border-b border-gray-800 focus-within:border-magenta-500 transition">
+                        <label
+                            class="text-[9px] mono text-magenta-500 uppercase tracking-widest">KPI_Crítico_a_Proteger_</label>
+                        <select id="kpi" class="bg-transparent py-4 outline-none text-gray-500 italic text-sm">
+                            <option>Reducción de Downtime Operativo</option>
+                            <option>Eliminación de Riesgo Fatal (LOTO)</option>
+                            <option>Automatización de Datos mediante AI</option>
+                        </select>
+                    </div>
+                    <div class="flex flex-col border-b border-gray-800 focus-within:border-magenta-500 transition">
+                        <label
+                            class="text-[9px] mono text-magenta-500 uppercase tracking-widest">Madurez_Digital_Actual_</label>
+                        <input type="number" id="madurez" min="1" max="10"
+                            class="bg-transparent py-4 outline-none text-white text-sm" placeholder="Escala 1 al 10">
+                    </div>
+                </div>
+                <div class="flex flex-col border-b border-gray-800 focus-within:border-cyan-500 transition">
+                    <label
+                        class="text-[9px] mono text-cyan-500 uppercase tracking-widest">Descripción_de_Brecha_</label>
+                    <textarea id="descripcion" rows="3"
+                        class="bg-transparent py-4 outline-none text-white text-sm resize-none"
+                        placeholder="¿Qué problema sistémico desea resolver hoy?"></textarea>
+                </div>
+                <button type="submit" id="submit-btn"
+                    class="w-full py-6 bg-cyan-500 text-black font-black uppercase text-xs tracking-[0.5em] hover:bg-magenta-500 hover:text-white transition-all duration-700">
+                    TRANSMITIR_DATOS_DIAGNÓSTICO_
+                </button>
+                <p id="response-msg" class="text-center text-[10px] mono mt-4 hidden"></p>
+            </form>
+        </div>
+    </section>
+
+    <footer class="p-20 text-center text-[9px] mono text-gray-800 tracking-[0.5em] uppercase opacity-30">
+        Javier Quispe Almerco // Persistencia Científica // built_on_github_supabase_2026 [cite: 1]
+    </footer>
+
+    <script>
+        // CONFIGURACIÓN DE SUPABASE
+        const SUPABASE_URL = 'https://lacnszqkvjgguxrezvat.supabase.co';
+        const SUPABASE_KEY = 'sb_publishable_ip6Lk0CLbHBIqc_ij6hdmw_S3XA7uG1';
+        const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+
+        const form = document.getElementById('supabase-form');
+        const btn = document.getElementById('submit-btn');
+        const msg = document.getElementById('response-msg');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            btn.disabled = true;
+            btn.innerText = 'CARGANDO_DATOS...';
+
+            const { data, error } = await supabaseClient
+                .from('consultas')
+                .insert([{
+                    empresa: document.getElementById('empresa').value,
+                    email: document.getElementById('email').value,
+                    kpi: document.getElementById('kpi').value,
+                    madurez: document.getElementById('madurez').value,
+                    descripcion: document.getElementById('descripcion').value
+                }]);
+
+            msg.classList.remove('hidden');
+            if (error) {
+                msg.innerText = 'CONEXIÓN_FALLIDA: ' + error.message;
+                msg.style.color = '#ff00ff';
+            } else {
+                msg.innerText = 'TRANSMISIÓN_EXITOSA. ANALISTA NOTIFICADO.';
+                msg.style.color = '#00f2fe';
+                form.reset();
+            }
+            btn.disabled = false;
+            btn.innerText = 'TRANSMITIR_DATOS_DIAGNÓSTICO_';
+        });
+    </script>
+
+</body>
+
+</html>
